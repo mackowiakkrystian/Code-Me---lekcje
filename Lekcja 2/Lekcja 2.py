@@ -35,14 +35,14 @@ print(text.rstrip("t"))
 print(not text.islower())
 
 print(text.center(10, "%"))
-
+#ZADANIE 2
 ciag = "dwunastka"
 ile = len(ciag)
 oblicz = ile // 2
 
 print(ciag[oblicz-1:oblicz+2])
 
-
+#ZADANIE 3
 quoute = "Honesty is the first chapter in the book of wisdom."
 print(len(quoute))
 print(quoute[-7:-1])
@@ -55,7 +55,7 @@ print(quoute[0::2])
 print(quoute[::-1])
 
 print(quoute.replace("wisdom", "friendship"))
-"""""
+""""" ZADANIE 4
 tytul = input("Podaj tytul ")
 nazwisko = input("Podaj nazwisko autora ")
 ilosc_stron = input("Podaj ilosc stron ")
@@ -81,6 +81,7 @@ prawy_konwert = prawy[::-1]
 print(lewy == prawy_konwert)
 """
 
+#ZADANIE 6
 zmienna = """"
 Beautiful is better than ugly.
 Explicit is better than implicit.
@@ -102,7 +103,12 @@ If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
 """
+print("Policz wystapienia slowa better:")
 print(zmienna.count("better"))
 print(zmienna.replace("*", ""))
+print("zamien jedno wystapienie explain na understand:")
 print(zmienna.replace("explain", "understand", 1))
 print(zmienna.replace(" ", "-"))
+
+#ZADANIE 7
+print("Zjadlem {} zestawow {}".format(5,'obiadowych'))
