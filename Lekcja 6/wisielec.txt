@@ -1,0 +1,8 @@
+.zwierzeta
+pies
+kot
+rybka
+.owoce
+jablko
+ananas
+winogrono
