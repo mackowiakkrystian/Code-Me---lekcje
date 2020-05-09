@@ -122,6 +122,34 @@ else:
 # # ZLE POKAZUJE ILOSC KRESEK JESLI SLOWO MA 2 LUB WIECEJ TAKICH SAMYCH ZNAKOW ORAZ SLOWO NIE KONCZY SIE NA TEN ZNAK
 # # NP DLA SLOWA "ANANAS" TAKIE ZNAKI WYKRZACZAJA PROGRAM: "A" LUB "N"
 
+import random
+answerlist = ["slowo", "ford"]
+random.shuffle(answerlist)
+
+answer = list(answerlist[0])
+
+display = []
+display.extend(answer)
+print(display)
+
+for i in range(len(display)):
+    display[i] = "_"
+
+print(' '.join(display))
+print()
+
+count = 0
+while count < len(answer):
+    guess = input("Podaj znak: ")
+    guess = guess.lower()
+    print(count)
+
+    for i in range(len(answer)):
+        if answer[i] == guess:
+            display[i] = guess
+            count = count + 1
+    print(' '.join(display))
+
 # from random import randint
 #
 # with open('wisielec.txt', 'r') as fopen:
